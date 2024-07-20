@@ -1,0 +1,81 @@
+Setup and Installation Guide for www.demoqa.com Automation Testing
+Repository: [GitHub Repository Link]
+
+Project Duration: 13th July 2024 - 20th July 2024
+
+Tools and Technologies:
+
+TestNG
+Selenium WebDriver
+IntelliJ IDEA
+Java
+Prerequisites:
+Java Development Kit (JDK)
+
+Ensure you have JDK 8 or later installed.
+Set up the JAVA_HOME environment variable.
+IntelliJ IDEA
+
+Download and install IntelliJ IDEA from the official website.
+Maven
+
+Ensure Maven is installed. If not, download it from the official website and follow the installation instructions.
+Step-by-Step Setup and Installation:
+Clone the Repository:
+
+Open your terminal or command prompt.
+Run the following command to clone the repository:
+sh
+Copy code
+git clone [GitHub Repository Link]
+Navigate to the project directory:
+sh
+Copy code
+cd demoqa-automation
+Import the Project into IntelliJ IDEA:
+
+Open IntelliJ IDEA.
+Click on File > Open and select the cloned project directory.
+IntelliJ will automatically detect the Maven project and import it.
+Set Up Selenium WebDriver:
+
+The required Selenium WebDriver dependencies are already included in the pom.xml file.
+Ensure that your pom.xml contains the following dependencies:
+xml
+Copy code
+<dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.4.0</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+Maven will automatically download and add these dependencies to your project.
+Install TestNG Plugin in IntelliJ IDEA:
+
+Go to File > Settings (or IntelliJ IDEA > Preferences on macOS).
+Select Plugins from the left panel.
+Search for TestNG and install the plugin.
+Restart IntelliJ IDEA if prompted.
+Configure TestNG:
+
+The testng.xml file is included in the project to configure the test suite.
+Ensure the file is correctly placed in the project directory.
+Run Tests:
+
+Open the testng.xml file in IntelliJ IDEA.
+Right-click on the file and select Run 'testng.xml'.
+Alternatively, you can run specific test classes by right-clicking on the test class and selecting Run.
+Generate Test Reports:
+
+After running the tests, TestNG generates default reports in the test-output directory.
+For advanced reporting, you can integrate tools like Allure or ExtentReports.
+
+Conclusion:
+By following this setup and installation guide, you will be able to clone the repository, set up the project in IntelliJ IDEA, and execute the automated tests for www.demoqa.com. The tests cover a comprehensive range of functionalities ensuring the reliability and performance of the website.
